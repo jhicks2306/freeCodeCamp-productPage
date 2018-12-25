@@ -1,16 +1,46 @@
+* {
+  box-sizing: border-box;
+}
 #header {
   display: flex;
-  background-color: blue;
+  align-items: center;
+  flex-direction: row;
+  background-color: #DDE4EB;
 }
-
 .nav-link {
   list-style: none;
   margin: 15px;
   padding: 5px;
-  background-color: green;
   font-family: sans-serif;
+}
+#header-img {
+  max-height: 70px;
+}
+.logo {
+  display: flex;
+  flex-direction: row;
+  margin: 10px;
 }
 ul {
   display: flex;
-  flex-direction: row;
+}
+.row {
+  display: flex;
+  min-height: 350px;
+}
+.product-text {
+  flex: 50%;
+  padding: 8px;
+}
+.product-image {
+  flex: 50%;
+  text-align: center;
+  border: solid;
+}
+p {
+  text-align: justify;
+}
+#form {
+  padding: 5px;
+  background-color: red;
 }
