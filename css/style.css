@@ -19,7 +19,7 @@ header {
   background-color: #505168;
 }
 main {
-  flex: 1;
+  flex: 1; /* set the main element to fill unused space #container */
   overflow: auto;
 }
 .nav-link {
