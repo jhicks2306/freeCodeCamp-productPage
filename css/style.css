@@ -70,12 +70,32 @@ h1, h2 {
   display: flex;
   flex-direction: column;
   text-align: center;
-  background-color: #7180AC;
+  color: white;
+  background-color: #505168;
   min-height: 60px;
   }
+#video {
+  margin: 10px;
+}
 #form {
-  padding: 5px;
-  background-color: red;
+  padding: 10px;
+  color: white;
+  background-color: #505168;
+  text-align: center;
+}
+#email {
+  margin: 7px;
+}
+#submit {
+  background-color: #505168;
+  color: white;
+  margin: 15px;
+  font-size: 20px;
+  border: 2px solid white;
+}
+#submit:hover {
+  background-color: white;
+  color: #505168;
 }
 @media screen and (max-width: 750px) {
   .row, #header {
