@@ -1,18 +1,18 @@
 * {
   box-sizing: border-box;
+  font-family: verdana;
 }
 #header {
   display: flex;
   flex-flow: row wrap;
   align-items: center;
   justify-content: space-between;
-  background-color: #DDE4EB;
+  background-color: #505168;
 }
 .nav-link {
   list-style: none;
   margin: 15px;
   padding: 5px;
-  font-family: sans-serif;
 }
 #header-img {
   max-height: 70px;
@@ -20,33 +20,40 @@
 .logo {
   display: flex;
   margin: 10px;
+  background-color: white;
+  border-radius: 50%;
 }
 ul {
   display: flex;
   flex-wrap: wrap;
+  color: white;
 }
 .row {
   display: flex;
   flex-direction: row;
-
 }
 .product-text {
   flex: 50%;
-  padding: 100px 50px 50px 50px;
-  min-height: 500px;
-  min-width: 700px;
-  background-color: green;
+  padding: 75px;
+  background-color: #EAFDF8;
 }
 .product-image {
   flex: 50%;
   text-align: center;
-  border: solid;
   min-height: 500px;
-  min-width: 700px;
+  background-color: #A5CCD1;
 }
-p {
+h1, h2 {
+  text-align: center;
+}
+.product-text p {
   text-align: justify;
+  padding: 0px 75px 0px 75px;
 }
+.bottom {
+  background-color: #7180AC;
+  min-height: 60px;
+  }
 #form {
   padding: 5px;
   background-color: red;
