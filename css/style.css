@@ -3,8 +3,9 @@
 }
 #header {
   display: flex;
+  flex-flow: row wrap;
   align-items: center;
-  flex-direction: row;
+  justify-content: space-between;
   background-color: #DDE4EB;
 }
 .nav-link {
@@ -18,24 +19,30 @@
 }
 .logo {
   display: flex;
-  flex-direction: row;
   margin: 10px;
 }
 ul {
   display: flex;
+  flex-wrap: wrap;
 }
 .row {
   display: flex;
-  min-height: 350px;
+  flex-direction: row;
+
 }
 .product-text {
   flex: 50%;
-  padding: 8px;
+  padding: 100px 50px 50px 50px;
+  min-height: 500px;
+  min-width: 700px;
+  background-color: green;
 }
 .product-image {
   flex: 50%;
   text-align: center;
   border: solid;
+  min-height: 500px;
+  min-width: 700px;
 }
 p {
   text-align: justify;
@@ -44,3 +51,16 @@ p {
   padding: 5px;
   background-color: red;
 }
+@media screen and (max-width: 750px) {
+  .row, #header {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 400px) {
+  ul {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+/* IDEA: Add a media query that acts on .row and #header turning flex-direction
+to row */
