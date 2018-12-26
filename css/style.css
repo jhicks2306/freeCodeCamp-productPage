@@ -2,12 +2,25 @@
   box-sizing: border-box;
   font-family: verdana;
 }
-#header {
+html, body {
+  margin: 0;
+  height: 100%;
+}
+#container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+header {
   display: flex;
   flex-flow: row wrap;
   align-items: center;
   justify-content: space-between;
   background-color: #505168;
+}
+main {
+  flex: 1;
+  overflow: auto;
 }
 .nav-link {
   margin: 15px;
@@ -20,9 +33,6 @@
 a, a:visited, a:hover, a:focus {
   text-decoration: none;
   color: white;
-}
-#header-img {
-  max-height: 70px;
 }
 .logo {
   display: flex;
@@ -45,6 +55,7 @@ nav ul {
 .row {
   display: flex;
   flex-direction: row;
+  overflow: auto;
 }
 .product-text {
   flex: 50%;
